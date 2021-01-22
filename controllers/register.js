@@ -29,7 +29,7 @@ const handleRegister = (req, res, db, bcrypt) => {
   }).catch((err) => {
     console.log("🚀 ~ file: register.js ~ line 31 ~ handleRegister ~ err", err);
 
-    res.status(400).json("unable to register");
+    res.status(400).json(err);
   });
 
   // WITHOUT DATA BASE
